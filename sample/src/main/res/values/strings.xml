@@ -1,0 +1,7 @@
+<resources>
+
+  <string name="app_name">StaticLauncher</string>
+  <string name="activity_a">Activity A</string>
+  <string name="activity_b">Activity B</string>
+
+</resources>
