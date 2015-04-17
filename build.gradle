@@ -3,8 +3,9 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.0.1'
+    classpath 'com.android.tools.build:gradle:1.2.0-beta1'
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    classpath 'com.novoda:bintray-release:0.2.10'
   }
 }
 
@@ -12,4 +13,14 @@ allprojects {
   repositories {
     jcenter()
   }
+}
+
+ext {
+  userOrg = 'jenzz'
+  groupId = 'com.jenzz.staticlauncher'
+  uploadName = 'Android-StaticLauncher'
+  publishVersion = '0.1'
+  description = 'An example project of Java annotation processing based on Gradle'
+  website = 'https://github.com/jenzz/Android-StaticLauncher'
+  licences = ['MIT']
 }

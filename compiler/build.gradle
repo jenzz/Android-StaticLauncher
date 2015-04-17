@@ -1,7 +1,19 @@
 apply plugin: 'java'
+apply plugin: 'bintray-release'
 
 dependencies {
   compile project (':api')
   compile 'com.google.auto.service:auto-service:1.0-rc2'
   compile 'com.squareup:javapoet:1.0.0'
+}
+
+publish {
+  artifactId = 'compiler'
+  userOrg = rootProject.userOrg
+  groupId = rootProject.groupId
+  uploadName = rootProject.uploadName
+  publishVersion = rootProject.publishVersion
+  description = rootProject.description
+  website = rootProject.website
+  licences = rootProject.licences
 }
